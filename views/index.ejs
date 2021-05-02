@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Studdy Buddy</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index">Study Buddy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="login-box">
+      <h1>Login Here</h1>
+      <form method="POST" action="/index" >
+        <!-- USERNAME INPUT -->
+        <input type="text" name ='username' class="inputbox" placeholder="Enter Username" required>
+        <br>
+        <!-- PASSWORD INPUT -->
+  
+        <input type="password" name ='password' class="inputbox" placeholder="Enter Password" required>
+        <br>
+        <input type="submit" class='sbutton' value="Log In">
+        <input type ="submit" class='sbutton' onclick="document.location='/signup'" value="Sign Up">
+      
+        <br>
+        <a href="#">Lost your Password?</a><br>
+        
+      </form>
+    </div>
+  </body>
+
+</html>

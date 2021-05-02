@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Signup Form </title>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="login.css">
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index">Study Buddy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="login-box">
+      
+      <h1>Signup Here</h1>
+      <form method="POST" action="/signup">
+       
+        <input type="text" name ='fullname' class="inputbox" placeholder="Full Name" required>
+        <br>
+        
+        <input type="text" name ='username' class="inputbox" placeholder="Username" required>
+        <!-- PASSWORD INPUT --><br>
+        
+        <input type="email" name ='email' class="inputbox" placeholder="Email" required><br>
+        
+        <input type="password" name ='password' class="inputbox" placeholder="Password" required><br>
+        
+        <input type="text" name ='phoneno' class="inputbox" placeholder="Phone" required><br>
+       
+        <input type="text" name ='aboutme' class="inputbox" placeholder="About me" required><br>
+        
+        <select name="lookingfor" id="lookingfor" class="selectbox" onmousedown="if(this.options.length>8){this.size=8;}"  onchange='this.size=0;' onblur="this.size=0;" searchable required>
+          <option value="none" selected disabled>
+            Select Looking for
+        </option>
+        <option value="Artificial Intelligence">Artificial Intelligence</option>
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+        <option value="Data Analyst">Data Analyst</option>
+        <option value="Data Analyst">Data Analyst</option>
+        <option value="Data Scientist">Data Scientist</option>
+        <option value="Data Scientist">Data Scientist</option>
+        <option value="Data Visualization">Data Visualization</option>
+        <option value="Database Administrator">Database Administrator</option>
+        <option value="Java">Java</option>
+        <option value="Machine Learing">Machine Learing</option>
+        <option value="Mern Stack">Mern Stack</option>
+        <option value="Prepaping for JEE">Prepaping for JEE</option>
+        <option value="Preparing for FAANG">Preparing for FAANG</option>
+        <option value="Preparing for FAANG">Preparing for FAANG</option>
+        <option value="Preparing for Managerial Interview">Preparing for Managerial Interview</option>
+        <option value="Preparing for NEET">Preparing for NEET</option>
+        <option value="Preparing for Technical Interview">Preparing for Technical Interview</option>
+        <option value="Preparing for UPSC">Preparing for UPSC</option>
+        <option value="Python">Python</option>
+        <option value="Preparing for Govt Job">Preparing for UPSC</option>
+        </select>
+        <br>
+
+        <input type="submit" class="sbutton" value="Submit"><br>
+      </form>
+    </div>
+  </body>
+ 
+</html>
